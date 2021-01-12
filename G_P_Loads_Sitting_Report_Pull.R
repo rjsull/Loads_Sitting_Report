@@ -126,4 +126,5 @@ setColWidths(wb, sheet1, cols = 1:n, widths = "auto")
 setColWidths(wb, sheet2, cols = 1:n2, widths = "auto")
 setColWidths(wb, sheet1, cols = col_index, widths = 18)
 setColWidths(wb, sheet1, cols = col_index2, widths = 18)
+#Change the path below to save the file locally
 saveWorkbook(wb, file = "C:/Users/tollenaard/Documents/G_P_Loads_Sitting_Report.xlsx", overwrite = TRUE)
