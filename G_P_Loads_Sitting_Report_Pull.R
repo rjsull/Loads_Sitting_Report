@@ -3,8 +3,8 @@ library(tidyverse)
 library(RODBC)
 library(openxlsx)
 
-###Connect to TMW Suite Replication
-dbhandle <- odbcDriverConnect('driver={SQL Server};server=NFIV-SQLTMW-04;database=TMWSuite;trusted_connection=true')
+###Connect to TMW Suite Replication, enter the server name below where the x is
+dbhandle <- odbcDriverConnect('driver={SQL Server};server=x;database=TMWSuite;trusted_connection=true')
 
 ###Contains SQL for G&P Assigned Trailers Sitting on Yards
 loadsSitting <- sqlQuery(dbhandle, "
