@@ -10,6 +10,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders 
 
+# add your email in 'fromaddr' and recipients in the 'toaddr'
 fromaddr = 'x'
 toaddr = ['x','x']
 
@@ -60,7 +61,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 # start TLS for security 
 s.starttls() 
 
-# Authentication, Enter Your Password Below
+# Authentication, Enter Your Password Below where the x is
 s.login(fromaddr, "x") 
   
 # Converts the Multipart msg into a string 
